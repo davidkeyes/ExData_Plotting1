@@ -38,7 +38,8 @@ lines(data$Datetime, data$Sub_metering_3[!data$Sub_metering_3 == "?"],
 legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
        lwd = 1,
        bty = "n",
-       col = c("black", "red", "blue"))
+       col = c("black", "red", "blue"),
+       cex = 0.75)
 
 ## Create the fourth graph
 plot(data$Datetime, data$Global_reactive_power[!data$Global_reactive_power == "?"], 
